@@ -22,7 +22,7 @@ ARG NG_CLI_VERSION=latest
 # ANGULAR
 # NOTE: is typescript required?
 # RUN npm install --unsafe-perm -g @angular/cli findup-sync typescript 
-RUN npm install --unsafe-perm -g @angular/cli@$NG_CLI_VERSION
+RUN npm install -g @angular/cli@$NG_CLI_VERSION
 
 # ADDITIONAL COMPONENTS: git
 RUN if [ "$IS_ALPINE" = "true" ] ; \
@@ -53,6 +53,7 @@ EXPOSE 4200
 # NOTE 1: "ng serve" is a simple server for use in testing or debugging Angular applications locally.
 # NOTE 2: https://stackoverflow.com/questions/40190538/when-to-use-npm-start-and-when-to-use-ng-serve
 #CMD cd my-app && ng serve --host 0.0.0.0 
+#CMD npm install && ng serve --host 0.0.0.0 
 CMD ng serve --host 0.0.0.0 
 
 

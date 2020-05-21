@@ -8,13 +8,13 @@ See the ./build.ps1 PowerShell command.
 
 ## Creating a new angular app
 
-    docker run --rm -it -v /PATH/TO/APP:/usr/src/app -p 4200:4200 galassia/angular-cli ng new YOUR-APP-NAME
+    docker run --rm -it -v /PATH/TO/APP:/usr/src/app galassia/angular-cli ng new YOUR-APP-NAME
 
 ### Example
 
     mkdir MyProjects
     cd MyProjects
-    docker run --rm -it -v ${PWD}:/usr/src/app -p 4200:4200 galassia/angular-cli ng new MySampleApp
+    docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli ng new MySampleApp --verbose=true
 
 ## Running your angular app
 
