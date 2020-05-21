@@ -22,8 +22,8 @@ A solution that seems to work well is to use yarn in CMD.
 
 Credits:
 
-https://github.com/angular/angular-cli/issues/8684
-https://stackoverflow.com/questions/15393821/npm-err-cb-never-called
+https://github.com/angular/angular-cli/issues/8684  
+https://stackoverflow.com/questions/15393821/npm-err-cb-never-called  
 
 ## Running your angular app
 
@@ -64,13 +64,13 @@ Some workarounds:
 
 Additional info here:
 
-https://stackoverflow.com/questions/39293636/npm-err-error-eperm-operation-not-permitted-rename
-https://github.com/Microsoft/WSL/issues/2097
-https://www.turek.dev/post/fix-wsl-file-permissions/
-https://gavinb.net/2017/03/07/docker-on-windows-angular-development/
+https://stackoverflow.com/questions/39293636/npm-err-error-eperm-operation-not-permitted-rename  
+https://github.com/Microsoft/WSL/issues/2097  
+https://www.turek.dev/post/fix-wsl-file-permissions/  
+https://gavinb.net/2017/03/07/docker-on-windows-angular-development/  
 
 ## Credits
 
-https://hub.docker.com/r/binfalse/angular-cli
-https://github.com/teracyhq/docker-files/tree/master/angular-cli
+https://hub.docker.com/r/binfalse/angular-cli  
+https://github.com/teracyhq/docker-files/tree/master/angular-cli  
 
