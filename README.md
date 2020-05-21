@@ -16,9 +16,9 @@ See the ./build.ps1 PowerShell command.
     cd MyProjects
     docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli ng new MySampleApp --skip-install
 
-Here I'm avoiding installation trough "ng new" since it takes longer than other install procedures. 
-Additionally it often rises some trouble during filesystem operations on a mapped volume on Windows host.
-A solution that seems to work well is to use yarn in CMD.
+Here I'm avoiding installation trough "ng new" since it takes longer than other install procedures.  
+Additionally it often rises some trouble during filesystem operations on a mapped volume on Windows host.  
+A solution that seems to work well is to use yarn in CMD.  
 
 Credits:
 
