@@ -14,7 +14,12 @@ See the ./build.ps1 PowerShell command.
 
     mkdir MyProjects
     cd MyProjects
-    docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli ng new MySampleApp --verbose=true
+    docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli ng new MySampleApp --skip-install
+
+    docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli /bin/sh -c "ng new MySampleApp && mv /usr/src/tmp/* /usr/src/app && exit"
+
+Seems quite triky but it was required due to some unwanted behavior during the npm install process on shared filesystem between container and windows host.
+This way app is installed in a temporary folder and then moved to the mapped volume.
 
 ## Running your angular app
 
