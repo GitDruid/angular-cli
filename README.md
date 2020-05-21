@@ -17,10 +17,11 @@ See the ./build.ps1 PowerShell command.
     docker run --rm -it -v ${PWD}:/usr/src/app galassia/angular-cli ng new MySampleApp --skip-install
 
 Here I'm avoiding installation trough "ng new" since it takes longer than other install procedures. 
-Additionally it often rise some trouble during filesystem operations on a mapped volume on Windows host.
+Additionally it often rises some trouble during filesystem operations on a mapped volume on Windows host.
 A solution that seems to work well is to use yarn in CMD.
 
 Credits:
+
 https://github.com/angular/angular-cli/issues/8684
 https://stackoverflow.com/questions/15393821/npm-err-cb-never-called
 
@@ -62,6 +63,7 @@ Some workarounds:
 - Replace npm with yarn
 
 Additional info here:
+
 https://stackoverflow.com/questions/39293636/npm-err-error-eperm-operation-not-permitted-rename
 https://github.com/Microsoft/WSL/issues/2097
 https://www.turek.dev/post/fix-wsl-file-permissions/
